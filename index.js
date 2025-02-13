@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         resultadoHtml += '<li>'+ arrayDatos[i] + '</li>'+'<br>';
         
        }
+     
        resultado.innerHTML = resultadoHtml;
        formulario.reset();
 

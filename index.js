@@ -22,7 +22,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     eliminarBtn.addEventListener("click",(e)=>{
         e.preventDefault();
         arrayDatos.pop();
-        resultado.innerHTML = arrayDatos;
+        let resultadoHtml= "";
+        for (let i = 0; i < arrayDatos.length; i++) {
+            resultadoHtml += '<li>'+ arrayDatos[i] + '</li>'+'<br>';
+            
+           }
+           resultado.innerHTML = resultadoHtml;
     });
+
 
 });

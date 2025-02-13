@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>to-do-list</title>
 </head>
 <body>
@@ -11,43 +12,13 @@
         <header>
             <h2>Lista de Tareas</h2>
         </header>
-
         <form action="" method="get"  id="lista">
             <input id="inputLista" name="tarea" placeholder="añade una tarea a la lista" type="text" />
             <button type="submit" id="agregar">Agregar</button>
             <button id="eliminar">Eliminar</button>
         </form>
-
         <ul id="resultadoLista"></ul>
     </main>
-    <script>
-        const formulario = document.getElementById('lista');
-        const agregarBtn = document.getElementById('agregar');
-        const eliminarBtn = document.getElementById('eliminar');
-        const resultado = document.getElementById('resultadoLista');
-        const arrayDatos = [];
-   
-
-        formulario.addEventListener("submit",(e=>{
-           e.preventDefault();
-           const valorList = document.getElementById('inputLista').value;
-           arrayDatos.push(valorList);
-           let resultadoHtml= "";
-           for (let i = 0; i < arrayDatos.length; i++) {
-            resultadoHtml += '<li>'+ arrayDatos[i] + '</li>';
-            
-           }
-           resultado.innerHTML = resultadoHtml;
-
-        }));
-
-        eliminarBtn.addEventListener("click",(e)=>{
-            e.preventDefault();
-            resultado.innerHTML = "";
-        });
-        
-
-    </script>
     
 </body>
 </html>

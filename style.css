@@ -8,17 +8,60 @@ header{
 header h2{
     text-align: center;
     font-weight: 200;
+    color:white;
+}
+
+body{
+    background: -webkit-linear-gradient(90deg, #3d4052,#09090c);background: linear-gradient(90deg, #3d4052,#09090c);
+    color:white !important;
 }
 
 #lista{
-    width:300px;
-    height: 100px;
-    margin: 0 auto;
     text-align: center;
     margin-top:2rem;
-    border: 1px solid black;
+
 }
 
 #resultadoLista{
+    margin-top:1rem;
     text-align: center;
+}
+
+button{
+    width:100px;
+    height:30px;
+}
+
+
+button {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+button {
+
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border:none;
+   box-shadow: #314755 0px 7px 2px, #000 0px 8px 5px;
+ }
+
+ button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ 
+#inputLista{
+    background-color: rgb(34 38 48 / var(--tw-bg-opacity, 1));
+    border-color: rgb(43 48 64 / var(--tw-border-opacity, 1));
+    color:white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    width: 280px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
 }

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     // recuperar cookie
     var cookie = document.cookie.split("; ").find(row => row.startsWith('resultado='));
     if(cookie){
+        //Para acceder al valor de la cookie
         const cookieValue = cookie.split('=')[1];
         arrayDatos = JSON.parse(cookieValue);
         let resultadoHtml = "";
@@ -32,7 +33,6 @@ document.addEventListener('DOMContentLoaded',()=>{
        }
 
        resultado.innerHTML = resultadoHtml;
-       console.log(document.cookie );
        formulario.reset();
 
     }));
